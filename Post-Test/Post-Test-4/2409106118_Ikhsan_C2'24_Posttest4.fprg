@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106118_Ikhsan_C2'24_Posttest4"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-29 12:42:29 AM"/>
+        <attribute name="created" value="VVNFUjtJS0hTQU47MjAyNC0wOS0yODswODowNzozNyBQTTsyMDYx"/>
+        <attribute name="edited" value="VVNFUjtJS0hTQU47MjAyNC0wOS0yODswODowNzo0NSBQTTsxO1VTRVI7SUtIU0FOOzIwMjQtMDktMjA7MDE6NTI6MDMgUE07MjQwOTEwNjExOF9Ja2hzYW5fQzInMjRfUG9zdHRlc3QzLmZwcmc7NzM4NA=="/>
+        <attribute name="edited" value="VVNFUjtJS0hTQU47MjAyNC0wOS0yOTsxMjo0MjoyOSBBTTszOzIxNTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="merkmobil" type="String" array="False" size=""/>
+            <declare name="diskon, harga, bayartotal" type="Integer" array="False" size=""/>
+            <declare name="password, loop" type="Integer" array="False" size=""/>
+            <declare name="nama, program" type="String" array="False" size=""/>
+            <assign variable="loop" expression="0"/>
+            <while expression="loop &lt; 3">
+                <output expression="&quot;Masukkan Nama Anda:&quot;" newline="True"/>
+                <input variable="nama"/>
+                <output expression="&quot;Masukkan Password Anda:&quot;" newline="True"/>
+                <input variable="password"/>
+                <if expression="nama == &quot;ikhsan&quot; and password == 118">
+                    <then>
+                        <output expression="&quot;Apa Anda Ingin Mengakhiri Program Ini:(lanjut / berhenti)&quot;" newline="True"/>
+                        <input variable="program"/>
+                        <if expression="program == &quot;berhenti&quot;">
+                            <then>
+                                <output expression="&quot;Program Anda Telah Selesai!&quot;" newline="True"/>
+                                <breakpoint expression="" always="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Program Di Lanjut!&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <output expression="&quot;Masukkan Merk Mobil Yang Ingin Anda Beli:..!&quot;" newline="True"/>
+                        <input variable="merkmobil"/>
+                        <output expression="&quot;Masukkan Harga Mobil:..!&quot;" newline="True"/>
+                        <input variable="harga"/>
+                        <assign variable="harga" expression="harga"/>
+                        <if expression="merkmobil == &quot;tesla&quot;">
+                            <then>
+                                <assign variable="diskon" expression="harga*0.17"/>
+                                <assign variable="bayartotal" expression="harga-diskon"/>
+                                <output expression="merkmobil" newline="True"/>
+                                <output expression="bayartotal" newline="True"/>
+                                <output expression="&quot;Terimakasih Telah Berbelanja&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="merkmobil == &quot;toyota&quot;">
+                                    <then>
+                                        <assign variable="diskon" expression="harga*0.21"/>
+                                        <assign variable="bayartotal" expression="harga-diskon"/>
+                                        <output expression="merkmobil" newline="True"/>
+                                        <output expression="bayartotal" newline="True"/>
+                                        <output expression="&quot;Terimakasih Telah Berbelanja&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="merkmobil == &quot;hyundai&quot;">
+                                            <then>
+                                                <assign variable="diskon" expression="harga*0.23"/>
+                                                <assign variable="bayartotal" expression="harga-diskon"/>
+                                                <output expression="merkmobil" newline="True"/>
+                                                <output expression="bayartotal" newline="True"/>
+                                                <output expression="&quot;Terimakasih Telah Berbelanja&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Mobil Yang Anda Cari Tidak Ada!&quot;" newline="True"/>
+                                                <output expression="&quot;Terimakasih Telah Datang Kemari&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                        <breakpoint expression="" always="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Apa Anda Ingin Mengakhiri Program Ini:(lanjut / tidak)&quot;" newline="True"/>
+                        <input variable="program"/>
+                        <if expression="program == &quot;lanjut&quot;">
+                            <then>
+                                <output expression="&quot;Program Anda Telah Selesai!&quot;" newline="True"/>
+                                <breakpoint expression="" always="True"/>
+                            </then>
+                            <else>
+                                <assign variable="loop" expression="loop + 1"/>
+                                <output expression="&quot;Batas Percobaan Yang Tersisa Tinggal:!&quot;" newline="True"/>
+                                <output expression="loop" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

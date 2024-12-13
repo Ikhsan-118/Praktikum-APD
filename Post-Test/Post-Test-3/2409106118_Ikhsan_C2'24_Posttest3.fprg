@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106118_Ikhsan_C2'24_Posttest3"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-20 02:17:04 PM"/>
+        <attribute name="created" value="VVNFUjtJS0hTQU47MjAyNC0wOS0yMDswMTo1MjowMyBQTTsyMDM5"/>
+        <attribute name="edited" value="VVNFUjtJS0hTQU47MjAyNC0wOS0yMDswMjoxNzowNCBQTTsxOzIxNTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="merkmobil" type="String" array="False" size=""/>
+            <declare name="diskon, harga, bayartotal" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Merk Mobil Yang Ingin Anda Beli:..!&quot;" newline="True"/>
+            <input variable="merkmobil"/>
+            <output expression="&quot;Masukkan Harga Mobil:..!&quot;" newline="True"/>
+            <input variable="harga"/>
+            <assign variable="harga" expression="harga"/>
+            <if expression="merkmobil == &quot;tesla&quot;">
+                <then>
+                    <assign variable="diskon" expression="harga*0.17"/>
+                    <assign variable="bayartotal" expression="harga-diskon"/>
+                    <output expression="merkmobil" newline="True"/>
+                    <output expression="bayartotal" newline="True"/>
+                    <output expression="&quot;Terimakasih Telah Berbelanja&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="merkmobil == &quot;toyota&quot;">
+                        <then>
+                            <assign variable="diskon" expression="harga*0.21"/>
+                            <assign variable="bayartotal" expression="harga-diskon"/>
+                            <output expression="merkmobil" newline="True"/>
+                            <output expression="bayartotal" newline="True"/>
+                            <output expression="&quot;Terimakasih Telah Berbelanja&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="merkmobil == &quot;hyundai&quot;">
+                                <then>
+                                    <assign variable="diskon" expression="harga*0.23"/>
+                                    <assign variable="bayartotal" expression="harga-diskon"/>
+                                    <output expression="merkmobil" newline="True"/>
+                                    <output expression="bayartotal" newline="True"/>
+                                    <output expression="&quot;Terimakasih Telah Berbelanja&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Mobil Yang Anda Cari Tidak Ada!&quot;" newline="True"/>
+                                    <output expression="&quot;Terimakasih Telah Datang Kemari&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

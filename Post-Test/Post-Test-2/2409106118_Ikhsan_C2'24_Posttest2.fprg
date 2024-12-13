@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106118_Ikhsan_Posttest2_Flowchart_C2'24"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-16 10:03:02 PM"/>
+        <attribute name="created" value="VVNFUjtJS0hTQU47MjAyNC0wOS0xNjswOTowNDoxMSBQTTsyMDQ4"/>
+        <attribute name="edited" value="VVNFUjtJS0hTQU47MjAyNC0wOS0xNjsxMDowMzowMiBQTTsxOzIxNDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama, nim" type="String" array="False" size=""/>
+            <declare name="hargasetiapmobil" type="Integer" array="False" size=""/>
+            <declare name="hargadiskontesla, hargadiskontoyota, hargadiskonhyundai" type="Real" array="False" size=""/>
+            <declare name="diskontesla, diskontoyota, diskonhyundai" type="Real" array="False" size=""/>
+            <declare name="modulus" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Nama, Nim, dan Harga Asli!&quot;" newline="True"/>
+            <input variable="nama"/>
+            <input variable="nim"/>
+            <input variable="hargasetiapmobil"/>
+            <assign variable="hargasetiapmobil" expression="300000000"/>
+            <assign variable="diskontesla" expression="0.17"/>
+            <assign variable="diskontoyota" expression="0.21"/>
+            <assign variable="diskonhyundai" expression="0.23"/>
+            <assign variable="modulus" expression="hargasetiapmobil/7"/>
+            <assign variable="hargadiskontesla" expression="hargasetiapmobil-(hargasetiapmobil*0.17)"/>
+            <assign variable="hargadiskontoyota" expression="hargasetiapmobil-(hargasetiapmobil*0.21)"/>
+            <assign variable="hargadiskonhyundai" expression="hargasetiapmobil-(hargasetiapmobil*0.23)"/>
+            <output expression="nama" newline="True"/>
+            <output expression="nim" newline="True"/>
+            <output expression="&quot;Harga Mobil Setelah Diskon&quot;" newline="True"/>
+            <output expression="hargasetiapmobil" newline="True"/>
+            <output expression="&quot;Tesla 17%, Toyota 21%, Hyundai 23%&quot;" newline="True"/>
+            <output expression="&quot;Diskon Tesla:&quot;" newline="True"/>
+            <output expression="hargadiskontesla" newline="True"/>
+            <output expression="&quot;Diskon Toyota:&quot;" newline="True"/>
+            <output expression="hargadiskontoyota" newline="True"/>
+            <output expression="&quot;Diskon Hyundai:&quot;" newline="True"/>
+            <output expression="hargadiskonhyundai" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
